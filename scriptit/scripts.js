@@ -3,7 +3,7 @@ $('#button').click(function(){
     $('h1').fadeIn(1800);
 });
 $('#button2').click(function(){
-    $('body').fadeOut(1800);
+    $('budy').fadeOut(1800);
 });
 $('#button3').click(function(){
     $('h1').slideUp(1800);
