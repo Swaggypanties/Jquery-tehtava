@@ -1,6 +1,42 @@
-div1{
-    width: 80px; 
-    height: 80px;
-    display: none;
-    background-color: red;
+.black-box {
+    width: 60%;  
+    height: 60%; 
+    background-color: black;
+    box-shadow: 0 0 20px rgb(230, 0, 255); 
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.teksti {
+    margin-top: 10%;
+    color: black;
+    text-align: center;
+    background-color: rgb(230, 0, 255); 
+    border-radius: 10px;
+    width: 35%;
+}
+
+.teksti1 {
+    margin-top: 1%;
+    color: black;
+    text-align: center;
+    background-color: rgb(230, 0, 255);
+    border-radius: 10px;
+    width: 50%;
+}
+.dropdown {
+    padding-top: 5%;
+    
+}
+
+.btn {
+    margin-top: 2%;
+}
+
+p{
+    background-color: rgb(230, 0, 255); 
+    border-radius: 10px;
+    width: 45%;
+
 }
