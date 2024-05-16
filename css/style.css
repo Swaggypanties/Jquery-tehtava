@@ -50,3 +50,11 @@ p{
     align-items: center;
     justify-content: center;
 }
+.btn-primary{
+    background-color: rgb(230, 0, 255) !important;
+}
+.btn-primary:hover {
+    color: #cae30c;
+    background-color: #cae30c;
+    border-color: #cae30c;
+}
