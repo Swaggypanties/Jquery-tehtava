@@ -23,3 +23,29 @@ $(document).ready(function() {
         $("#AirPress").append('<option value="High">High</option>');
         $("#AirPress").append('<option value="Low">Low</option>');
     });
+    function lisaa(event) {
+        event.preventDefault();
+        
+        var sunny = $("#Sunny").val();
+        var rain = $("#Rain").val();
+        var temp = $("#Temp").val();
+        var airPress = $("#AirPress").val();
+        
+        var params = $.param({
+            Sunny: sunny,
+            Rain: rain,
+            Temp: temp,
+            AirPress: airPress
+        });
+        $("body").fadeOut(1000, function() { 
+        window.location.href = 'LureSelected.html?' + params;
+    });
+
+    return false;
+
+    }
+    $(function() {
+        $('body').hide().fadeIn('slow');
+        
+        });
+    
