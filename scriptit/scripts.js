@@ -17,7 +17,6 @@ $(document).ready(function() {
     $(document).ready(function() {
       $("#MenuButton1").click(function() {
           $("#MenuBudy").fadeOut(500, function() {
-            event.preventDefault();
               window.location.href = "LureSelector.html";
           });
       });
@@ -39,5 +38,11 @@ $(document).ready(function() {
               window.location.href = "Farewell.html";
           });
       });
+
+      $("#LureReturn").click(function() {
+        $("#MenuBudy").fadeOut(500, function() {
+            window.location.href = "menu.html";
+        });
+    });
   });
   
