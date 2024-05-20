@@ -71,12 +71,11 @@ p{
     background-color: blueviolet !important;
 }
 .MenuTeksti {
-    margin-top: 5%;
     color: black;
     text-align: center;
     background-color: rgb(230, 0, 255); 
     border-radius: 10px;
     width: 50%;
-    height: 60%;
+    height: 20%;
     margin-bottom: 1%;
 }
