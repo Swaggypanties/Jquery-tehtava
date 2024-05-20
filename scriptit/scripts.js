@@ -17,6 +17,7 @@ $(document).ready(function() {
     $(document).ready(function() {
       $("#MenuButton1").click(function() {
           $("#MenuBudy").fadeOut(500, function() {
+            event.preventDefault();
               window.location.href = "LureSelector.html";
           });
       });
