@@ -22,6 +22,17 @@ $(document).ready(function() {
         // Populate the "AirPress" select element
         $("#AirPress").append('<option value="High">High</option>');
         $("#AirPress").append('<option value="Low">Low</option>');
+
+        //Water clarity
+        $("#WaterClr").append('<option value="Clear">Clear</option>');
+        $("#WaterClr").append('<option value="Cloudy">Cloudy</option>');
+        $("#WaterClr").append('<option value="Murky">Murky</option>');
+
+        //Water depth
+        $("#WaterDpth").append('<option value="Shallow">Shallow 1-5m</option>');
+        $("#WaterDpth").append('<option value="MidDpth">Mid-depth 6-12m</option>');
+        $("#WaterDpth").append('<option value="Deep">Deep 13-23m</option>');
+        $("#WaterDpth").append('<option value="UltraDeep">Ultra Deep 24m->...</option>');
     });
     function lisaa(event) {
         event.preventDefault();
@@ -30,12 +41,16 @@ $(document).ready(function() {
         var rain = $("#Rain").val();
         var temp = $("#Temp").val();
         var airPress = $("#AirPress").val();
+        var waterclr = $("#WaterClr").val();
+        var waterdpth = $("#WaterDpth").val();
         
         var params = $.param({
             Sunny: sunny,
             Rain: rain,
             Temp: temp,
-            AirPress: airPress
+            AirPress: airPress,
+            WaterClr: waterclr,
+            WaterDpth: waterdpth
         });
         $("body").fadeOut(1000, function() { 
         window.location.href = 'LureSelected.html?' + params;
@@ -47,5 +62,34 @@ $(document).ready(function() {
     $(function() {
         $('body').hide().fadeIn('slow');
         
+        });
+    
+        $(document).ready(function() {
+            // Function to get URL parameters
+            function getUrlParams() {
+                var params = {};
+                var parser = document.createElement('a');
+                parser.href = window.location.href;
+                var query = parser.search.substring(1);
+                var vars = query.split('&');
+                for (var i = 0; i < vars.length; i++) {
+                    var pair = vars[i].split('=');
+                    params[pair[0]] = decodeURIComponent(pair[1]);
+                }
+                return params;
+            }
+    
+            var params = getUrlParams();
+            var result = '';
+    
+            // Determine the result based on parameters
+            if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.AirPress === 'High' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'Deep') {
+                result = 'Green';
+            } else {
+                result = 'No matching result found.';
+            }
+    
+            // Display the result
+            $("#result").text(result);
         });
     

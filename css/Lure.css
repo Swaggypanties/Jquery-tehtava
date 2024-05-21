@@ -77,3 +77,13 @@ div#preloader {
     width: 100%;
     z-index: 999;
 }
+.ResultTeksti {
+    margin-top: 10%;
+    color: black;
+    text-align: center;
+    background-color: rgb(230, 0, 255); 
+    border-radius: 10px;
+    width: 50%;
+
+    margin-bottom: 1%;
+}
