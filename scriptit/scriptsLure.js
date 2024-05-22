@@ -81,15 +81,22 @@ $(document).ready(function() {
     
             var params = getUrlParams();
             var result = '';
+            var imgResult = '';
     
             // Determine the result based on parameters
             if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.AirPress === 'High' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'Deep') {
                 result = 'Green';
+                imgResult = 'LureImg/green.jpg';
             } else {
                 result = 'No matching result found.';
             }
     
             // Display the result
             $("#result").text(result);
+
+            if (imgResult) {
+                $("#resultImage").attr("src", imgResult).show();
+            }
+
         });
     
