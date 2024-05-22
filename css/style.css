@@ -105,3 +105,8 @@ div#preloader {
     height: 200px; /* Adjust size as needed */
     margin-right: 10px; /* Space between image and text */
 }
+#weatherInfo{
+    width: 100% ;
+    padding-top: 5px;
+    padding-left: 35%;
+}
