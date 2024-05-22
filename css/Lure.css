@@ -70,13 +70,6 @@ p{
 #MenuButton4:hover{
     background-color: blueviolet !important;
 }
-div#preloader {
-    background: url("../workimage/ajax-loader.gif") no-repeat scroll center center #000000;
-    height: 100%;
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-}
 .ResultTeksti {
     margin-top: 10%;
     color: black;
