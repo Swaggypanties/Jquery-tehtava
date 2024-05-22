@@ -34,9 +34,9 @@ $(document).ready(function() {
     // Function to display weather data
     function displayWeather(data) {
         const weatherHtml = `
-            <p>Location: ${data.name}</p>
-            <p>Temperature: ${data.main.temp} °C</p>
-            <p>Weather: ${data.weather[0].description}</p>
+            <h4>Location: ${data.name}</h4>
+            <h4>Temperature: ${data.main.temp} °C</h4>
+            <h4>Weather: ${data.weather[0].description}</h4>
         `;
         $('#box2').find('#weatherInfo').html(weatherHtml);
     }
@@ -50,8 +50,8 @@ $(document).ready(function() {
         }, function(error) {
             console.error('Error getting location', error);
             // Default to a specific location if geolocation fails
-            const defaultLat = 37.7749; // Example: San Francisco
-            const defaultLon = -122.4194;
+            const defaultLat = 60.192059; // Example: San Francisco
+            const defaultLon = 24.945831;
             getWeather(defaultLat, defaultLon);
         });
     } else {

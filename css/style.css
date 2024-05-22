@@ -106,7 +106,12 @@ div#preloader {
     margin-right: 10px; /* Space between image and text */
 }
 #weatherInfo{
-    width: 100% ;
+    width: 70%;
     padding-top: 5px;
-    padding-left: 35%;
+    background-color: rgb(230, 0, 255);
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    border-style: dashed;
 }
+
