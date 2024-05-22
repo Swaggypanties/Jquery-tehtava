@@ -19,9 +19,6 @@ $(document).ready(function() {
         $("#Temp").append('<option value="Warm">Warm 6...15</option>');
         $("#Temp").append('<option value="Hot">Hot 16...25</option>');
 
-        // Populate the "AirPress" select element
-        $("#AirPress").append('<option value="High">High</option>');
-        $("#AirPress").append('<option value="Low">Low</option>');
 
         //Water clarity
         $("#WaterClr").append('<option value="Clear">Clear</option>');
@@ -40,7 +37,6 @@ $(document).ready(function() {
         var sunny = $("#Sunny").val();
         var rain = $("#Rain").val();
         var temp = $("#Temp").val();
-        var airPress = $("#AirPress").val();
         var waterclr = $("#WaterClr").val();
         var waterdpth = $("#WaterDpth").val();
         
@@ -48,7 +44,6 @@ $(document).ready(function() {
             Sunny: sunny,
             Rain: rain,
             Temp: temp,
-            AirPress: airPress,
             WaterClr: waterclr,
             WaterDpth: waterdpth
         });
@@ -84,10 +79,30 @@ $(document).ready(function() {
             var imgResult = '';
     
             // Determine the result based on parameters
-            if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.AirPress === 'High' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'Deep') {
+            if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'Deep') {
                 result = 'Green';
                 imgResult = 'LureImg/green.jpg';
-            } else {
+            } else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'Deep') {
+                result = 'Blue';
+                imgResult = 'LureImg/green.jpg';
+            }else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'Deep') {
+                result = 'Black';
+                imgResult = 'LureImg/green.jpg';
+            }else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'Deep') {
+                result = 'Purple';
+                imgResult = 'LureImg/green.jpg';
+            }else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'Deep') {
+                result = 'Pink';
+                imgResult = 'LureImg/green.jpg';
+            }else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'Deep') {
+                result = 'Red';
+                imgResult = 'LureImg/green.jpg';
+            }else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'Deep') {
+                result = 'Chartruese';
+                imgResult = 'LureImg/green.jpg';
+            }
+            
+            else {
                 result = 'No matching result found.';
             }
     
