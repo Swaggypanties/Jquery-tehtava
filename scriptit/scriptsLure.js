@@ -325,13 +325,50 @@ $(document).ready(function() {
                 imgResult = 'LureImg/pink.jpg';
             }
             //Here is all the red variables
-            else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'Shallow') {
+            else if (params.Sunny === 'Sunny' && params.Rain === 'No' && params.Temp === 'Warm' && params.WaterClr === 'Clear' && params.WaterDpth === 'Shallow') {
                 result = 'Red';
                 imgResult = 'LureImg/red.jpg';
-            }//Here is all the chartreuse variables
+            }
+            else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Clear' && params.WaterDpth === 'Shallow') {
+                result = 'Red';
+                imgResult = 'LureImg/red.jpg';
+            }
+            else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Hot' && params.WaterClr === 'Clear' && params.WaterDpth === 'Shallow') {
+                result = 'Red';
+                imgResult = 'LureImg/red.jpg';
+            }
+            else if (params.Sunny === 'Sunny' && params.Rain === 'No' && params.Temp === 'Warm' && params.WaterClr === 'Clear' && params.WaterDpth === 'Shallow') {
+                result = 'Red';
+                imgResult = 'LureImg/red.jpg';
+            }
+            //Here is all the chartreuse variables
             else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'Deep') {
                 result = 'Chartreuse';
                 imgResult = 'LureImg/charr.jpg';
+            }
+            else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Hot' && params.WaterClr === 'Clear' && params.WaterDpth === 'Deep') {
+                result = 'Chartreuse';
+                imgResult = 'LureImg/charr.jpg';
+            }
+            else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'Deep') {
+                result = 'Chartreuse';
+                imgResult = 'LureImg/charr.jpg';
+            }
+            else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'Deep') {
+                result = 'Chartreuse';
+                imgResult = 'LureImg/charr.jpg';
+            }//Here is the greens
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'No' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'Deep') {
+                result = 'Green';
+                imgResult = 'LureImg/green.jpg';
+            }
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'No' && params.Temp === 'Hot' && params.WaterClr === 'Clear' && params.WaterDpth === 'Deep') {
+                result = 'Green';
+                imgResult = 'LureImg/green.jpg';
+            }
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'Yes' && params.Temp === 'Hot' && params.WaterClr === 'Clear' && params.WaterDpth === 'Deep') {
+                result = 'Green';
+                imgResult = 'LureImg/green.jpg';
             }
             
             else {
