@@ -33,11 +33,7 @@ $(document).ready(function() {
           });
       });
   
-      $("#MenuButton4").click(function() {
-          $("body").fadeOut(500, function() {
-              window.location.href = "Farewell.html";
-          });
-      });
+      
 
       $("#LureReturn").click(function() {
         $("body").fadeOut(500, function() {
@@ -50,3 +46,11 @@ $(document).ready(function() {
     $('body').hide().fadeIn('slow');
     
     });
+    $(document).ready(function(){
+        $("#MenuButton4").click(function(){
+          $("#box2").fadeOut();
+          $("#bye").fadeIn(3000);
+          var audio = document.getElementById('audio');
+            audio.play();
+        });
+      });
