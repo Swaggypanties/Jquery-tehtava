@@ -78,28 +78,260 @@ $(document).ready(function() {
             var result = '';
             var imgResult = '';
     
-            // Determine the result based on parameters
-            if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'Deep') {
+            // Here is all the green variables
+            if (params.Sunny === 'Cloudy' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'Deep') {
                 result = 'Green';
                 imgResult = 'LureImg/green.jpg';
-            } else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'Deep') {
+            }//Here is all the blue variables
+             else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Cold' && params.WaterClr === 'Clear' && params.WaterDpth === 'UltraDeep') {
                 result = 'Blue';
-                imgResult = 'LureImg/green.jpg';
-            }else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'Deep') {
+                imgResult = 'LureImg/blue.jpg';
+            } else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Cold' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            } else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Cold' && params.WaterClr === 'Murky' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            }
+            else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Clear' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            } else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            } else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Murky' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            }
+            else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Hot' && params.WaterClr === 'Clear' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            } else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Hot' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            } else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Hot' && params.WaterClr === 'Murky' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            }
+            else if (params.Sunny === 'Sunny' && params.Rain === 'No' && params.Temp === 'Cold' && params.WaterClr === 'Clear' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            } else if (params.Sunny === 'Sunny' && params.Rain === 'No' && params.Temp === 'Warm' && params.WaterClr === 'Clear' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            } else if (params.Sunny === 'Sunny' && params.Rain === 'No' && params.Temp === 'Hot' && params.WaterClr === 'Clear' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            }
+            else if (params.Sunny === 'Sunny' && params.Rain === 'No' && params.Temp === 'Cold' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            } else if (params.Sunny === 'Sunny' && params.Rain === 'No' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            } else if (params.Sunny === 'Sunny' && params.Rain === 'No' && params.Temp === 'Hot' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            }
+            else if (params.Sunny === 'Sunny' && params.Rain === 'No' && params.Temp === 'Cold' && params.WaterClr === 'Murky' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            } else if (params.Sunny === 'Sunny' && params.Rain === 'No' && params.Temp === 'Warm' && params.WaterClr === 'Murky' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            } else if (params.Sunny === 'Sunny' && params.Rain === 'No' && params.Temp === 'Hot' && params.WaterClr === 'Murky' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            }
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'No' && params.Temp === 'Cold' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            } else if (params.Sunny === 'Cloudy' && params.Rain === 'No' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            } else if (params.Sunny === 'Cloudy' && params.Rain === 'No' && params.Temp === 'Hot' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            }
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'Yes' && params.Temp === 'Cold' && params.WaterClr === 'Clear' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            } else if (params.Sunny === 'Cloudy' && params.Rain === 'Yes' && params.Temp === 'Cold' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            } else if (params.Sunny === 'Cloudy' && params.Rain === 'Yes' && params.Temp === 'Cold' && params.WaterClr === 'Murky' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            }
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Clear' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            } else if (params.Sunny === 'Cloudy' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            } else if (params.Sunny === 'Cloudy' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Murky' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            }
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'Yes' && params.Temp === 'Hot' && params.WaterClr === 'Clear' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            } else if (params.Sunny === 'Cloudy' && params.Rain === 'Yes' && params.Temp === 'Hot' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            } else if (params.Sunny === 'Cloudy' && params.Rain === 'Yes' && params.Temp === 'Hot' && params.WaterClr === 'Murky' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            }
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'No' && params.Temp === 'Cold' && params.WaterClr === 'Clear' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            } else if (params.Sunny === 'Cloudy' && params.Rain === 'No' && params.Temp === 'Warm' && params.WaterClr === 'Clear' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            } else if (params.Sunny === 'Cloudy' && params.Rain === 'No' && params.Temp === 'Hot' && params.WaterClr === 'Clear' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            }
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'No' && params.Temp === 'Cold' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            } else if (params.Sunny === 'Cloudy' && params.Rain === 'No' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            } else if (params.Sunny === 'Cloudy' && params.Rain === 'No' && params.Temp === 'Hot' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            }
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'No' && params.Temp === 'Cold' && params.WaterClr === 'Murky' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            } else if (params.Sunny === 'Cloudy' && params.Rain === 'No' && params.Temp === 'Warm' && params.WaterClr === 'Murky' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            } else if (params.Sunny === 'Cloudy' && params.Rain === 'No' && params.Temp === 'Hot' && params.WaterClr === 'Murky' && params.WaterDpth === 'UltraDeep') {
+                result = 'Blue';
+                imgResult = 'LureImg/blue.jpg';
+            }
+            //Here is all the black variables
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Murky' && params.WaterDpth === 'Deep') {
                 result = 'Black';
-                imgResult = 'LureImg/green.jpg';
-            }else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'Deep') {
+                imgResult = 'LureImg/black.jpg';
+            }
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Murky' && params.WaterDpth === 'MidDpth') {
+                result = 'Black';
+                imgResult = 'LureImg/black.jpg';
+            }
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'Yes' && params.Temp === 'Hot' && params.WaterClr === 'Murky' && params.WaterDpth === 'Deep') {
+                result = 'Black';
+                imgResult = 'LureImg/black.jpg';
+            }
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'Yes' && params.Temp === 'Hot' && params.WaterClr === 'Murky' && params.WaterDpth === 'MidDpth') {
+                result = 'Black';
+                imgResult = 'LureImg/black.jpg';
+            }
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'Yes' && params.Temp === 'Cold' && params.WaterClr === 'Murky' && params.WaterDpth === 'Deep') {
+                result = 'Black';
+                imgResult = 'LureImg/black.jpg';
+            }
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'Yes' && params.Temp === 'Cold' && params.WaterClr === 'Murky' && params.WaterDpth === 'MidDpth') {
+                result = 'Black';
+                imgResult = 'LureImg/black.jpg';
+            }
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'No' && params.Temp === 'Hot' && params.WaterClr === 'Murky' && params.WaterDpth === 'Deep') {
+                result = 'Black';
+                imgResult = 'LureImg/black.jpg';
+            }
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'No' && params.Temp === 'Hot' && params.WaterClr === 'Murky' && params.WaterDpth === 'MidDpth') {
+                result = 'Black';
+                imgResult = 'LureImg/black.jpg';
+            }
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'No' && params.Temp === 'Warm' && params.WaterClr === 'Murky' && params.WaterDpth === 'Deep') {
+                result = 'Black';
+                imgResult = 'LureImg/black.jpg';
+            }
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'No' && params.Temp === 'Warm' && params.WaterClr === 'Murky' && params.WaterDpth === 'MidDpth') {
+                result = 'Black';
+                imgResult = 'LureImg/black.jpg';
+            }
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'No' && params.Temp === 'Cold' && params.WaterClr === 'Murky' && params.WaterDpth === 'Deep') {
+                result = 'Black';
+                imgResult = 'LureImg/black.jpg';
+            }
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'No' && params.Temp === 'Cold' && params.WaterClr === 'Murky' && params.WaterDpth === 'MidDpth') {
+                result = 'Black';
+                imgResult = 'LureImg/black.jpg';
+            }
+            //Here is all the purple variables
+            else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Cold' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'MidDpth') {
                 result = 'Purple';
-                imgResult = 'LureImg/green.jpg';
-            }else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'Deep') {
+                imgResult = 'LureImg/purple.jpg';
+                
+            }
+            else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Cold' && params.WaterClr === 'Clear' && params.WaterDpth === 'MidDpth') {
+                result = 'Purple';
+                imgResult = 'LureImg/purple.jpg';
+                
+            }
+            else if (params.Sunny === 'Sunny' && params.Rain === 'No' && params.Temp === 'Cold' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'MidDpth') {
+                result = 'Purple';
+                imgResult = 'LureImg/purple.jpg';
+                
+            }
+            else if (params.Sunny === 'Sunny' && params.Rain === 'No' && params.Temp === 'Cold' && params.WaterClr === 'Clear' && params.WaterDpth === 'MidDpth') {
+                result = 'Purple';
+                imgResult = 'LureImg/purple.jpg';
+                
+            }
+            //Here is all the pink variables
+            else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'Deep') {
                 result = 'Pink';
-                imgResult = 'LureImg/green.jpg';
-            }else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'Deep') {
+                imgResult = 'LureImg/pink.jpg';
+            }
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'MidDpth') {
+                result = 'Pink';
+                imgResult = 'LureImg/pink.jpg';
+            }
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'No' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'MidDpth') {
+                result = 'Pink';
+                imgResult = 'LureImg/pink.jpg';
+            }
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'Yes' && params.Temp === 'Hot' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'MidDpth') {
+                result = 'Pink';
+                imgResult = 'LureImg/pink.jpg';
+            }
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'No' && params.Temp === 'Hot' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'MidDpth') {
+                result = 'Pink';
+                imgResult = 'LureImg/pink.jpg';
+            }
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'MidDpth') {
+                result = 'Pink';
+                imgResult = 'LureImg/pink.jpg';
+            }
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Clear' && params.WaterDpth === 'MidDpth') {
+                result = 'Pink';
+                imgResult = 'LureImg/pink.jpg';
+            }
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'No' && params.Temp === 'Warm' && params.WaterClr === 'Clear' && params.WaterDpth === 'MidDpth') {
+                result = 'Pink';
+                imgResult = 'LureImg/pink.jpg';
+            }
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'Yes' && params.Temp === 'Hot' && params.WaterClr === 'Clear' && params.WaterDpth === 'MidDpth') {
+                result = 'Pink';
+                imgResult = 'LureImg/pink.jpg';
+            }
+            else if (params.Sunny === 'Cloudy' && params.Rain === 'No' && params.Temp === 'Hot' && params.WaterClr === 'Clear' && params.WaterDpth === 'MidDpth') {
+                result = 'Pink';
+                imgResult = 'LureImg/pink.jpg';
+            }
+            //Here is all the red variables
+            else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'Shallow') {
                 result = 'Red';
-                imgResult = 'LureImg/green.jpg';
-            }else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'Deep') {
-                result = 'Chartruese';
-                imgResult = 'LureImg/green.jpg';
+                imgResult = 'LureImg/red.jpg';
+            }//Here is all the chartreuse variables
+            else if (params.Sunny === 'Sunny' && params.Rain === 'Yes' && params.Temp === 'Warm' && params.WaterClr === 'Cloudy' && params.WaterDpth === 'Deep') {
+                result = 'Chartreuse';
+                imgResult = 'LureImg/charr.jpg';
             }
             
             else {
