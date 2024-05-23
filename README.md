@@ -1,4 +1,4 @@
-# Jqurey kalastus sovellus
+# Jquery kalastus sovellus
 Web sovelluksessa on hyödynnetty Jquery tekniikoita.
 
 Tervetuloa Fish Pro web sovellukseen!
