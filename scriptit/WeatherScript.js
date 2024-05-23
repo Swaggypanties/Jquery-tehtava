@@ -6,11 +6,11 @@ $("#LureReturn").click(function() {
 });
 });
 $(document).ready(function() {
-    // Define the API key and base URL
-    const apiKey = 'da127b898f1361a34642b93e37827af8'; // Replace 'your_api_key_here' with your actual API key
+    
+    const apiKey = 'da127b898f1361a34642b93e37827af8';
     const apiUrl = 'https://api.openweathermap.org/data/2.5/weather';
 
-    // Function to get weather data
+    // Keli tiedot
     function getWeather(lat, lon) {
         $.ajax({
             url: apiUrl,
@@ -19,7 +19,7 @@ $(document).ready(function() {
                 lat: lat,
                 lon: lon,
                 appid: apiKey,
-                units: 'metric' // Use 'imperial' for Fahrenheit
+                units: 'metric'
             },
             success: function(response) {
                 console.log(response);
@@ -31,7 +31,7 @@ $(document).ready(function() {
         });
     }
 
-    // Function to display weather data
+    // Tuo kelin esille html tiedostossa
     function displayWeather(data) {
         const weatherHtml = `
             <h4>Location: ${data.name}</h4>
@@ -41,7 +41,7 @@ $(document).ready(function() {
         $('#box2').find('#weatherInfo').html(weatherHtml);
     }
 
-    // Get current position
+    // Hakea nykyistä sijaintia
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
             const lat = position.coords.latitude;
@@ -49,16 +49,16 @@ $(document).ready(function() {
             getWeather(lat, lon);
         }, function(error) {
             console.error('Error getting location', error);
-            // Default to a specific location if geolocation fails
-            const defaultLat = 60.192059; // Example: San Francisco
+            // Jos ei löydy niin sijainti on automaattisesti Helsinki
+            const defaultLat = 60.192059; 
             const defaultLon = 24.945831;
             getWeather(defaultLat, defaultLon);
         });
     } else {
         console.error('Geolocation is not supported by this browser.');
-        // Default to a specific location if geolocation is not supported
-        const defaultLat = 37.7749; // Example: San Francisco
-        const defaultLon = -122.4194;
+        // Jos selain ei tue niin oletusarvo on Helsinki
+        const defaultLat = 60.192059; 
+        const defaultLon = 24.945831;
         getWeather(defaultLat, defaultLon);
     }
 
