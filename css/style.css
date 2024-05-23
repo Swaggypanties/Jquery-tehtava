@@ -114,3 +114,19 @@ p{
     display: none;
     color: brown;
 }
+#Button1{
+    background-color: rgb(190, 24, 250) !important;
+    color: black;
+
+}
+#Button1:hover{
+    background-color: rgb(177, 226, 43) !important;
+}
+#Button2{
+    background-color: rgb(190, 24, 250) !important;
+    color: black;
+
+}
+#Button2:hover{
+    background-color: rgb(255, 0, 0) !important;
+}
