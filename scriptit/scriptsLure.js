@@ -5,6 +5,7 @@ $(document).ready(function() {
           });
         });
     });
+    //Lisää vaihtoehtoi valikkoon
     $(document).ready(function() {
         // Populate the "Sunny" select element
         $("#Sunny").append('<option value="Sunny">Sunny</option>');
@@ -31,6 +32,7 @@ $(document).ready(function() {
         $("#WaterDpth").append('<option value="Deep">Deep 13-23m</option>');
         $("#WaterDpth").append('<option value="UltraDeep">Ultra Deep 24m->...</option>');
     });
+    //Haetaan syötettyjen tietojen arvot
     function lisaa(event) {
         event.preventDefault();
         
@@ -39,7 +41,7 @@ $(document).ready(function() {
         var temp = $("#Temp").val();
         var waterclr = $("#WaterClr").val();
         var waterdpth = $("#WaterDpth").val();
-        
+        //Luodaan merkkijono 
         var params = $.param({
             Sunny: sunny,
             Rain: rain,
@@ -60,7 +62,7 @@ $(document).ready(function() {
         });
     
         $(document).ready(function() {
-            // Function to get URL parameters
+            //Haetaan se merkkijono mitä muodostettiin aikasemmin
             function getUrlParams() {
                 var params = {};
                 var parser = document.createElement('a');
@@ -73,7 +75,7 @@ $(document).ready(function() {
                 }
                 return params;
             }
-    
+            //Kutsuu funktiota ja tallentaa tuloksen
             var params = getUrlParams();
             var result = '';
             var imgResult = '';
@@ -395,7 +397,7 @@ $(document).ready(function() {
                 result = 'No matching result found.';
             }
     
-            // Display the result
+            // Näyttää tuloksen ja sen kuvana
             $("#result").text(result);
 
             if (imgResult) {
