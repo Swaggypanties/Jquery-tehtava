@@ -15,4 +15,4 @@ Voit vielä tarkastaa "weather" nappulasta millainen keli on tällä hetkellä.(
 
 Jos on jotain ongelmia ohjelmiston kanssa/kehityskohteita laita vain sähköpostia jere.kause@student.laurea.fi ja vastaan teillen n.1 viikon sisällä
 
-Kiitos kun käytät/kokeilit sovellustani 
+Kiitos kun käytät/kokeilit sovellustani!
