@@ -110,3 +110,7 @@ p{
     border-style: dashed;
 }
 
+.FareWell{
+    display: none;
+    color: brown;
+}

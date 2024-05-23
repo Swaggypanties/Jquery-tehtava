@@ -1,12 +1,14 @@
+//Game over funktio tässä
 $(document).ready(function(){
     $("#Button2").click(function(){
       $("#box2").fadeOut();
       $("#bye").fadeIn(3000);
       var audio = document.getElementById('audio');
+      audio.volume = 0.03;
         audio.play();
     });
   });
-
+//Menu osion napit
 $(document).ready(function() {
     $("#Button1").click(function() {
         $("body").fadeOut(500, function() {
@@ -46,11 +48,14 @@ $(document).ready(function() {
     $('body').hide().fadeIn('slow');
     
     });
+    //Hyvästi nappula missä on audio liitetty mukana
     $(document).ready(function(){
         $("#MenuButton4").click(function(){
           $("#box2").fadeOut();
-          $("#bye").fadeIn(3000);
+          $("#FareWell").fadeIn(3000);
           var audio = document.getElementById('audio');
+            audio.volume = 0.01;
             audio.play();
-        });
-      });
+            
+    });
+  });
